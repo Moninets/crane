@@ -1,0 +1,265 @@
+/* ---------------------------------------
+	Typography
+--------------------------------------- */
+
+body {
+	@include breakpoint(medium down){
+		font-size: 15px;
+	}
+	font-family: $main-font;
+	font-size: 17px;
+	color: $text-color;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	a {
+		color: inherit;
+	}
+}
+
+h1, .h1 {
+	@include breakpoint(medium down){
+		font-size: 32px;
+		max-width: 400px;
+		line-height: 1.3;
+	}
+	font-family: $main-font;
+	font-size: 68px;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+
+h2, .h2 {
+	@include breakpoint(medium down){
+		font-size: 26px;
+	}
+	font-family: $main-font;
+	font-size: 45px;
+	font-weight: 700;
+}
+
+h3, .h3 {
+	font-family: $main-font;
+	font-size: 36px;
+	font-weight: 700;
+}
+
+h4, .h4 {
+	font-family: $main-font;
+	font-size: 22px;
+	font-weight: 700;
+}
+
+h5, .h5 {
+	font-family: $main-font;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+h6, .h6 {
+	font-family: $main-font;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+p {
+	/*basic paragraph styles*/
+	&:empty {
+		display: none;
+	}
+
+	a {
+		transition: all 0.2s ease-in-out;
+		font-size: 17px;
+		font-weight: 600;
+		&:hover {
+		opacity: 0.8;
+
+		}
+	}
+}
+
+ul {
+	/*basic list styles*/
+	font-size: inherit;
+	@include list-unstyled;
+
+	li {
+		/*basic list-item styles*/
+
+		a {
+			display: block;
+			padding: 5px 10px 5px 2px;
+			font-size: 17px;
+			color: $grey;
+
+			&:hover {
+				color: $yellow-color;
+			}
+		}
+	}
+}
+
+address {
+	font-style: normal;
+	margin-bottom: $global-margin;
+}
+
+a {
+	color: $text-color;
+	font-size: 16px;
+	transition: all 0.2s ease-in-out;
+	text-underline: none;
+
+	&:hover, &:focus {
+		/*basic hover and focus effects*/
+		//color: darken($main-color, 20);
+		color: $yellow-color;
+	}
+}
+
+/* ---------------------------------------
+	Forms/Inputs
+--------------------------------------- */
+
+.no-outline {
+	button, a, [tabindex] {
+		outline: none;
+	}
+}
+
+/* Placeholder styling */
+
+input, textarea {
+	&::placeholder {
+		opacity: 1;
+	}
+}
+
+/* Input Styling */
+
+[type=color],
+[type=date],
+[type=datetime-local],
+[type=datetime],
+[type=email],
+[type=month],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=text],
+[type=time],
+[type=url],
+[type=week],
+textarea,
+select,
+.select-styled {
+	$height: ($input-font-size * unitless-calc($input-line-height)) + (get-side($input-padding, 'top') + get-side($input-padding, 'bottom')) + rem-calc(get-border-value($input-border, 'width') * 2);
+	/* STYLES GO THERE */
+	height: $height;
+	margin-bottom: 0;
+}
+
+textarea[rows] {
+	/*Styles for TextArea*/
+	height: 150px;
+	max-width: 100%;
+}
+
+[type=number] {
+	-moz-appearance: textfield;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+	margin: 0;
+	-webkit-appearance: none;
+}
+
+[type=checkbox],
+[type=file],
+[type=radio] {
+	margin-bottom: 0;
+}
+
+button, .button, input[type='submit'], input[type='reset'], input[type='button'] {
+	//border-width: $button-hollow-border-width;
+	transition: all 0.2s ease-in-out;
+
+	&:hover, &:focus {
+
+
+	}
+}
+
+/* Button additional styles */
+
+.button {
+	@include breakpoint(small down){
+		padding: 17px 50px 17px 30px;
+		width: 100%;
+	}
+	padding: 20px 50px 20px 30px;
+	position: relative;
+	border-radius: 50px;
+	letter-spacing: 0.07em;
+	font-size: 16px;
+	font-weight: 400;
+	color: $white-color;
+	background: rgba(255, 184, 33, 1) ;
+	transition: all 0.2s ease-in-out;
+	&:before {
+		@include breakpoint(small down){
+			right: 85px;
+		}
+		content: '\f054';
+		font-family: 'Font Awesome 5 Free';
+		position: absolute;
+		font-weight: 900;
+		right: 25px;
+		top: 50%;
+		transform: translateY(-50%);
+		display: block;
+		margin-left: 15px;
+		color: #4e4e4e;
+	}
+	&:hover, &:focus {
+		background-color: $yellow-hover;
+
+	}
+}
+
+button.isotope-button {
+	border-radius: 50px;
+	font-size: 20px;
+	border: 1px;
+	background: rgba(148, 179, 196, 0.5);
+	border: none;
+	color: $white-color;
+	padding: 18px 30px;
+	&:hover {
+		background-color: $yellow-hover;
+		color: $white-color;
+	}
+}
+
+.before-line {
+	margin: 30px 0 0 25px;
+	li {
+		position: relative;
+		font-size: 19px;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 1px;
+			height: 100%;
+			background-color: $yellow-color;
+			top: 0;
+			left: -20px;
+		}
+
+	}
+}

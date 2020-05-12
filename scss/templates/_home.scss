@@ -1,0 +1,389 @@
+.home {
+	.lines-wrapper__line {
+		&:before {
+			height: 500vh;
+		}
+
+		&:last-child {
+			&:after {
+				height: 500vh;
+			}
+		}
+	}
+}
+
+/* Began About */
+.cr-about {
+	position: relative;
+
+	&__bg {
+		@include breakpoint(xlarge down){
+			height: 300px;
+		}
+		@include breakpoint(medium down){
+			display: none;
+		}
+		position: absolute;
+		height: 445px;
+		width: 100%;
+		background-position: 0 50%;
+		background-repeat: no-repeat;
+		background-color: rgba(0, 0, 0, 0.8);
+
+	}
+
+	&__triangle {
+		@include breakpoint(medium down){
+			display: none;
+		}
+		position: absolute;
+		right: 0;
+		top: -186px;
+		img {
+			@include breakpoint(xlarge down) {
+				height: 486px;
+			}
+
+		}
+	}
+
+	.gradient {
+		@include breakpoint(xlarge down){
+			margin: -166px 80px 0 ;
+		}
+		@include breakpoint(medium down){
+			margin: -157px 0 0;
+		}
+		position: relative;
+		box-shadow: 0 13px 38px 0 rgba(0, 0, 0, 0.33);
+		margin-top: -166px;
+	}
+
+	.slider {
+		top: 6px;
+
+		.slide {
+			@include breakpoint(xlarge down){
+				height: 600px;
+			}
+			@include breakpoint(medium down){
+				height: 400px;
+			}
+			@include breakpoint(small down){
+				height: 200px;
+			}
+			position: relative;
+			height: 765px;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			background-size: cover;
+
+			.slide__content {
+				@include breakpoint(medium down) {
+					left: 20px;
+				}
+				@include breakpoint(small down){
+					bottom: 15px;
+				}
+				position: absolute;
+				bottom: 35px;
+				color: $white-color;
+				left: 60px;
+
+				&--title {
+					@include breakpoint(small down){
+						font-size: 20px;
+					}
+					margin: 0;
+				}
+
+				p {
+					@include breakpoint(medium down){
+						font-size: 13px;
+					}
+					font-size: 15px;
+				}
+			}
+
+			&__button {
+				@include breakpoint(medium down){
+					right: 20px;
+					bottom: 35px;
+				}
+				@include breakpoint(small down){
+					display: none;
+				}
+				position: absolute;
+				bottom: 53px;
+				right: 60px;
+			}
+
+			&:before {
+				content: '';
+				display: block;
+				background-image: -moz-linear-gradient(90deg, rgb(23, 21, 22) 0%, rgba(23, 21, 22, 0) 100%);
+				background-image: -webkit-linear-gradient(90deg, rgb(23, 21, 22) 0%, rgba(23, 21, 22, 0) 100%);
+				background-image: -ms-linear-gradient(90deg, rgb(23, 21, 22) 0%, rgba(23, 21, 22, 0) 100%);
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				height: 270px;
+			}
+
+		}
+
+		.slick-arrow {
+			width: 35px;
+			height: 35px;
+			top: 48%;
+
+			&:before {
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				width: 35px;
+				height: 35px;
+				display: block;
+			}
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+
+		.slick-next {
+			right: -75px;
+
+			&:before {
+				content: '';
+				background-image: url(../images/about-arrow-right.png);
+			}
+		}
+
+		.slick-prev {
+			left: -75px;
+
+			&:before {
+				content: '';
+				background-image: url(../images/about-arrow-left.png);
+			}
+		}
+		.slick-dots {
+			bottom: -20px;
+			.slick-active {
+				button {
+					&:before {
+						background-color: $yellow-color;
+					}
+				}
+			}
+			li {
+				button {
+					&:before {
+						background-color: #bcbcbc;
+						width: 10px;
+						height: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* End About */
+
+/* Began Services */
+.section-services {
+	@include breakpoint (medium down) {
+		background-image: none;
+		background-size: 0;
+	}
+	padding-bottom: 80px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+}
+
+
+/* End Services */
+
+.triangle-image {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+
+
+/* Began About Team */
+
+.about-team {
+	position: relative;
+
+	.section-top-content {
+
+		margin: 155px 0 75px;
+
+		.text-style {
+			margin-top: 0;
+			max-width: 600px;
+		}
+	}
+
+	.wrapper {
+		.text-style {
+			font-family: $sub-font;
+			font-style: italic;
+			font-size: 24px;
+			margin: 121px 0 0 115px;
+			line-height: 1.7;
+			max-width: 442px;
+		}
+	}
+}
+
+/* End About Team */
+/* Began Safety */
+
+.safety {
+	padding-top: 90px;
+
+	&__title {
+		margin-bottom: 25px;
+	}
+
+	.text-style {
+		line-height: 1.9;
+	}
+
+	.section-image {
+		position: relative;
+
+		img {
+			position: absolute;
+			right: 0;
+			top: -255px;
+		}
+
+	}
+}
+
+/* End Safety */
+
+/* Began Testimonials */
+
+.testimonials {
+	background-repeat: no-repeat;
+	position: relative;
+	padding: 275px 0 146px;
+	background-position: 0 34%;
+
+	&:before {
+		content: '';
+		position: absolute;
+		background-repeat: no-repeat;
+		background-image: url(../images/crane-fin-right.png);
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		max-width: 400px;
+		height: 400px;
+	}
+
+	&__section--title {
+		top: 335px;
+		left: -580px;
+	}
+
+	&__title {
+		text-align: center;
+		padding: 5px;
+		margin-right: 45px;
+	}
+
+	.slider {
+		margin-top: 55px;
+
+		.slide {
+			.slide-content {
+				margin: 135px 48px 15px;
+
+				.text-style {
+					font-size: 29px;
+					font-weight: 300;
+					line-height: 1.65;
+					margin-bottom: 20px;
+					padding: 5px;
+				}
+
+				&__name {
+					font-family: $sub-font;
+					font-style: italic;
+					color: $yellow-color;
+					margin: 0;
+					padding: 5px;
+				}
+
+				&__position {
+					font-size: 16px;
+					font-family: $sub-font;
+					padding: 0 5px 5px;
+					color: #919191;
+				}
+			}
+		}
+
+		.slick-arrow {
+			top: -94px;
+			width: 92px;
+			height: 54px;
+			border-radius: 25px;
+			background-color: $yellow-color;
+			&:hover {
+			background-color: $yellow-hover;
+			}
+
+			&:before {
+				color: #242424;
+				font-size: 21px;
+			}
+		}
+
+		.slick-prev {
+			right: 233px;
+			left: inherit;
+		}
+
+		.slick-dots {
+			width: auto;
+			top: -100px;
+			right: 122px;
+
+			li {
+				margin: 0 10px;
+
+				button {
+					&:before {
+						background-color: #ccc9c3;
+						width: 9px;
+						height: 9px;
+					}
+				}
+			}
+
+			.slick-active {
+				button {
+					&:before {
+						background-color: $yellow-color;
+						width: 12px;
+						height: 12px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* End Testimonials */
+

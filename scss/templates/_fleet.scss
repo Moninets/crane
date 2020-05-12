@@ -1,0 +1,59 @@
+.lines-wrapper {
+	&__line {
+
+		&:last-child {
+			&:after {
+				height: 200vh;
+			}
+		}
+
+		&:before {
+			height: 200vh;
+		}
+	}
+}
+/* Began Banner */
+
+.fleet-banner {
+	padding: 330px 0 407px;
+	.title-style {
+		padding: 10px;
+		margin-bottom: 15px;
+	}
+}
+
+/* End Banner */
+
+ /* Began Fleet Crane */
+
+.fleet-crane {
+	padding: 110px 0 180px;
+	.crane__title {
+		color: $text-color;
+	}
+	.text-style {
+		padding: 10px 5px;
+		max-width: 560px;
+		line-height: 1.8;
+	}
+	.filter-button-group {
+		margin-top: 85px;
+		button.isotope-button {
+			color: $text-color;
+			background-color: rgba(23, 21, 22, 0.102);
+			font-weight: 700;
+			&:hover {
+				background-color: $yellow-color;
+				color: $white-color;
+			}
+		}
+	}
+	.grid-item {
+		.link {
+			color: $text-color;
+		}
+	}
+
+}
+
+/* End Fleet Crane */

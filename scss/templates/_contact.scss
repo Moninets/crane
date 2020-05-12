@@ -1,0 +1,257 @@
+
+.projects {
+	.lines-wrapper__line {
+		&:before {
+			height: 300vh;
+		}
+
+		&:last-child {
+			&:after {
+				height: 300vh;
+			}
+		}
+	}
+}
+
+/* Began Banner */
+
+.contact-banner {
+	padding: 310px 0 385px;
+
+	.title-style {
+		margin-bottom: 15px;
+	}
+
+	.text-style {
+		max-width: 790px;
+		line-height: 1.6;
+	}
+}
+
+/* End Banner*/
+
+/* Began Contact */
+
+.cr-contact {
+	padding: 122px 0 0;
+
+	.title-style {
+		max-width: 430px;
+		padding: 5px 5px 5px 0;
+		line-height: 1.3;
+		margin-bottom: 15px;
+	}
+
+	.text-style {
+		line-height: 1.9;
+		padding: 5px 5px 5px 0;
+	}
+
+	.wrapper {
+		.text-style {
+			margin-left: 60px;
+		}
+
+	}
+
+	.location {
+		margin-top: 60px;
+
+		&__title {
+			margin-top: 185px;
+			font-size: 32px;
+			padding: 0 5px 0 0;
+		}
+
+		.before-line {
+			max-width: 290px;
+			margin: 30px 0 0;
+
+			li {
+				display: flex;
+				align-items: center;
+				font-size: 20px;
+				letter-spacing: 0.05em;
+				padding: 6px 0;
+				margin-bottom: 20px;
+				min-height: 70px;
+				font-style: italic;
+
+				a {
+					color: $text-color;
+
+					&:hover {
+						color: $yellow-color;
+					}
+				}
+
+				&:before {
+					width: 5px;
+					left: -30px;
+				}
+			}
+		}
+
+		.wrapper__images {
+			position: relative;
+		}
+
+		.wrapper__triangle {
+			right: -32px;
+			bottom: -32px;
+			z-index: -1;
+		}
+	}
+}
+
+
+/* End Contact */
+
+/* Began Team*/
+
+.team {
+	padding: 130px 0 187px;
+
+	&__title {
+		padding: 10px;
+		text-align: center;
+		margin-bottom: 63px;
+	}
+
+	.slide {
+		&__content {
+			padding: 17px 20px;
+
+			.slide__title {
+				margin-bottom: 3px;
+			}
+
+			.slide__position {
+				font-weight: 500;
+				font-style: italic;
+				color: $yellow-color;
+				margin: 0;
+			}
+
+			.slide__phone {
+				color: $grey-color;
+				font-style: italic;
+
+				&:hover {
+					color: $yellow-color;
+				}
+			}
+		}
+	}
+
+	.slick-dots {
+		display: block;
+		max-width: 600px;
+		margin: auto;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #fff;
+		z-index: 3;
+		padding: 36px 0;
+		bottom: -73px;
+		li {
+			margin: 0;
+
+			button {
+				&:before {
+					border-radius: 0;
+					width: 165px;
+					height: 3px;
+					background-color: rgb(229, 228, 228);
+				}
+			}
+		}
+
+		.slick-active {
+			top: 1px;
+
+			button {
+				&:before {
+					background-color: $yellow-color;
+					height: 5px;
+				}
+			}
+		}
+	}
+}
+
+/* End Team */
+
+/* Began Joining */
+
+.joining {
+	position: relative;
+	padding: 140px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	color: $white-color;
+	z-index: 0;
+
+	.section-title {
+		top: 110px;
+		left: -125px;
+	}
+
+	.title-style {
+		padding: 5px 5px 5px 0;
+		margin-bottom: 25px;
+	}
+
+	.text-style {
+		padding: 5px 5px 5px 0;
+		line-height: 1.9;
+		color: rgb(254, 254, 254);
+		font-weight: 400;
+	}
+
+	&__content {
+		width: 100%;
+		max-width: 675px;
+		margin: 25px 0 30px;
+		padding-bottom: 34px;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		align-items: flex-start;
+		flex-flow: wrap;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.302);
+
+		.joining__title {
+			.title-style {
+				margin: 0;
+			}
+
+			.text-style {
+				font-size: 15px;
+				line-height: 1;
+			}
+		}
+
+		.joining__button {
+			background-color: rgba(0, 0, 0, 0.149);
+			font-size: 17px;
+			padding: 20px 60px 20px 30px;
+
+			&:before {
+				color: $yellow-color;
+				transition: all 0.2s ease-in-out;
+			}
+
+			&:hover {
+				background-color: $yellow-color;
+
+				&:before {
+					color: $text-color
+				}
+			}
+		}
+	}
+}
+
+/* End Joining */

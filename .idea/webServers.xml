@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="dbd2fb2a-279b-463a-be64-a645611c23d3" name="crane" url="https://bd36ade5a1.nxcli.net/">
+        <fileTransfer host="bd36ade5a1.nxcli.net" port="22" rootFolder="/chroot/home/a3d47c70/crane.com/html/wp-content/themes/crane" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

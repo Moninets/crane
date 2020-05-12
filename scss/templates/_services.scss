@@ -1,0 +1,143 @@
+.services-page {
+	.lines-wrapper__line {
+		&:before,
+		&:after {
+			height: 400vh;
+		}
+	}
+}
+
+/* Began Banner */
+.services-banner {
+	position: relative;
+	padding: 300px 0 96px;
+}
+
+/* End Banner */
+
+/* Began Services Power */
+
+.power-services {
+	position: relative;
+	padding: 185px 0 153px;
+
+	.section-title {
+		top: -30px;
+		left: 5px;
+	}
+
+	&__title {
+		max-width: 400px;
+		line-height: 1.3;
+	}
+
+	.text-style {
+		padding: 5px;
+		margin-top: 5px;
+		max-width: 600px;
+		line-height: 1.9;
+	}
+
+	.bottom-content {
+		margin-top: 112px;
+
+		.before-line {
+			margin: 122px 0 0;
+
+			li {
+				font-size: 20px;
+				font-weight: 300;
+				font-style: italic;
+				margin-bottom: 30px;
+				display: flex;
+				align-items: center;
+				min-height: 73px;
+
+				&:before {
+					width: 4px;
+					left: -30px;
+				}
+			}
+		}
+
+		.wrapper {
+			position: relative;
+
+			&__image {
+				position: absolute;
+				right: -30px;
+				bottom: -30px;
+				z-index: -1;
+			}
+		}
+	}
+}
+
+/* End Services Power*/
+
+/* Began Sample Plan */
+
+.sample-plane {
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	padding: 250px 0 282px;
+
+	h1 {
+		color: $white-color;
+		font-size: 65px;
+		line-height: 1.3;
+	}
+
+	&__file {
+		color: $white-color;
+		font-weight: 900;
+		text-transform: uppercase;
+		position: relative;
+		margin-top: 103px;
+		display: block;
+		font-size: 17px;
+		width: 100%;
+		max-width: 208px;
+
+
+		&:before {
+			content: '';
+			position: absolute;
+			background-image: url('../images/arrow-dropdown-down.png');
+			background-repeat: no-repeat;
+			right: 0;
+			top: 10px;
+			width: 15px;
+			height: 10px;
+			display: block;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			display: block;
+			height: 1px;
+			width: auto;
+			background-color: rgba(255, 255, 255, 0.2);
+			bottom: -20px;
+			left: 0;
+			right: 0;
+		}
+	}
+}
+
+/* End Sample Plan */
+
+/* Began Other Services */
+
+.other-services {
+	padding: 127px 0 114px;
+	.container-posts {
+		margin: 175px auto 0;
+	}
+}
+
+/* End Other Services */
+

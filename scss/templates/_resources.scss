@@ -1,0 +1,47 @@
+/* Began Advantages */
+
+.advantages {
+	padding: 170px 0;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+
+	.title-style {
+		margin: 95px 0 20px;
+		padding: 5px 5px 5px 0;
+		max-width: 420px;
+		width: 100%;
+		line-height: 1.2;
+	}
+
+	.text-style {
+		padding: 5px 5px 5px 0;
+		max-width: 520px;
+		width: 100%;
+		line-height: 1.9;
+	}
+
+	&-container {
+		margin-top: 150px;
+
+		.advantages__list {
+			margin-bottom: 30px;
+
+			.content {
+				padding: 15px;
+
+				.title-style {
+					margin: 0;
+					line-height: 1;
+				}
+
+				.text-style {
+					line-height: 1.5;
+				}
+			}
+		}
+	}
+
+}
+
+/* End Advantages */

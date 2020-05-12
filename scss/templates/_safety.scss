@@ -1,0 +1,148 @@
+
+.safety-page {
+	.lines-wrapper__line {
+		&:before,
+		&:after {
+			height: 400vh;
+		}
+	}
+}
+
+/* Began Industry */
+
+.industry {
+	padding: 145px 0 0;
+
+	.content-top {
+		margin-bottom: 122px;
+
+		&__title {
+			padding: 5px;
+			margin-top: 25px;
+			max-width: 550px;
+			line-height: 1.2;
+		}
+
+		.text-style {
+			padding: 5px;
+			max-width: 560px;
+			width: 100%;
+			line-height: 1.9;
+		}
+
+	}
+
+	.content-bottom {
+		display: flex;
+
+		.wrapper__images {
+			max-width: 960px;
+			width: 100%;
+			position: relative;
+
+			.images__scale {
+				position: relative;
+
+			}
+
+			.triangle-image-right {
+				z-index: -1;
+				right: -20px;
+				bottom: -20px;
+			}
+
+		}
+
+		.info {
+			margin: 120px 0 0 210px;
+
+			.wrapper {
+				font-family: $sub-font;
+				font-style: italic;
+				text-align: center;
+				margin-bottom: 40px;
+
+				&__counter {
+					font-weight: 300;
+					color: $yellow-color;
+					font-size: 40px;
+					padding: 5px;
+					margin: 0;
+					line-height: 1;
+				}
+
+				&__date {
+					color: $grey-color;
+					font-size: 15px;
+					padding: 0 5px;
+				}
+
+				&__title {
+					font-family: $sub-font;
+					font-weight: 400;
+					font-style: italic;
+					padding: 5px;
+					max-width: 200px;
+					margin: auto;
+					width: 100%;
+				}
+
+				&:nth-child(2) {
+
+					.wrapper__title {
+						margin-top: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* End Industry */
+
+/* Began Awards */
+
+.awards {
+	position: relative;
+	padding: 180px 0 263px;
+
+	&__bg {
+		padding: 80px 0 135px;
+		background-color: rgb(38, 38, 38);
+
+		.awards__title {
+			padding: 5px;
+			text-align: center;
+			color: $yellow-color;
+		}
+	}
+
+	.container-awards {
+
+		max-width: 1110px;
+		width: 100%;
+		margin: 100px auto 0;
+
+		.wrapper {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			margin: auto;
+
+			&__text {
+				padding: 5px;
+				width: 100%;
+				max-width: 200px;
+				margin-top: 25px;
+				font-family: $sub-font;
+				font-style: italic;
+				font-size: 16px;
+				color: $white-color;
+			}
+		}
+	}
+}
+
+/* End Awards */

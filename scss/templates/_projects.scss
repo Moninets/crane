@@ -1,0 +1,120 @@
+.projects {
+	.lines-wrapper__line {
+		&:before {
+			height: 350vh;
+		}
+
+		&:last-child {
+			&:after {
+				height: 350vh;
+			}
+		}
+	}
+}
+
+.projects-banner {
+	padding: 300px 0 80px;
+	position: relative;
+}
+
+/* Began Specializes */
+
+.specializes {
+	padding: 150px 0 40px;
+
+	&__title {
+		padding: 5px;
+		text-align: center;
+		margin-bottom: 80px;
+	}
+
+	.wrapper {
+		margin-bottom: 50px;
+
+		&__image {
+			margin: auto;
+			display: block;
+			width: auto;
+			height: 44px;
+		}
+
+		&__title {
+			font-weight: 300;
+			font-style: italic;
+			padding: 10px;
+			margin-top: 10px;
+			text-align: center;
+		}
+	}
+}
+
+/* End Specializes */
+
+/* Began Crane projects */
+
+.crane-projects {
+	padding: 40px 0 140px;
+
+	&__title {
+		margin: 0 auto 90px;
+		padding: 5px;
+	}
+
+	.post {
+		margin-bottom: 60px;
+		position: relative;
+
+		&__link {
+			position: relative;
+			overflow: hidden;
+			display: block;
+			padding-bottom: 20px;
+
+
+			&:hover {
+				.post__link--image {
+					transform: scale(1.05);
+				}
+
+				.post__title {
+					color: $yellow-color;
+					transition: all 0.2s ease-in-out;
+				}
+			}
+
+			&--image {
+				transition: all 0.2s ease-in-out;
+				margin: auto;
+				display: block;
+			}
+
+		}
+
+		.expand-icon {
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			border-radius: 3px;
+			background-color: rgba(0, 0, 0, 0.341);
+			top: 20px;
+			right: 60px;
+		}
+
+		&__title {
+			font-size: 26px;
+			padding: 5px;
+			margin-left: 55px;
+		}
+
+		.triangle__image {
+			position: absolute;
+			bottom: 5px;
+			right: 5px;
+			z-index: -1;
+		}
+	}
+}
+
+/* End Crane projects*/
